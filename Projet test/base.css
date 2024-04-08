@@ -10,6 +10,7 @@ header {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     text-align: center;
+    border-radius: 25px;
 }
 
 nav ul {
@@ -53,12 +54,16 @@ main {
     padding: 20px;
 }
 
+
+
 footer {
-    background-color: rgba(255, 255, 255, 0.082);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     text-align: center;
+    border-radius: 25px;
     position: fixed;
-    width: 100%;
     bottom: 0;
-    border-radius: 50px;
+    width: 100%;
+    box-sizing: border-box;
+  
 }

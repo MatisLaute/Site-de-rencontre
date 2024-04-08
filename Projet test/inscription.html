@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page d'Inscription</title>
+    <link rel="stylesheet" type="text/css" href="inscription.css">
+</head>
+<body>
+    <button onclick="window.location.href='base.html'" class="home-button">Retour à l'accueil</button>
+    <div class="login-container">
+        <h2>Mon inscription</h2>
+        <h3>Le début de vos histoires...</h3>
+        <form action="/submit_registration" method="post">
+            <input type="text" placeholder="Mon nom d'utilisateur" name="uname" required>
+            <input type="email" placeholder="Mon Email" name="email" required>
+            <input type="password" id="psw" placeholder="Mon mot de passe" name="psw" required onkeyup="checkPasswordStrength();">
+            <div id="strength-bar"></div>
+            <input type="password" placeholder="Je confirme le mot de passe" name="confirm_psw" required>
+            <button type="submit">Je m'inscris</button>
+            <p class="message">Déjà enregistré? <a href="connexion.html">Se connecter</a></p>
+        </form>
+    </div>
+
+
+    <script  src="inscription.js"></script>
+
+</body>
+</html>

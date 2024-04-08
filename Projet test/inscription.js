@@ -4,7 +4,7 @@ function checkPasswordStrength() {
 
     
 
-    // Calculez la force du mot de passe
+ 
     var strength = 0;
     if (password.match(/[a-z]+/)) {
         strength += 1;

@@ -4,9 +4,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #C33764;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #C33764; 
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
+    background: linear-gradient(to right, #1D2671, #C33764); 
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,7 +28,10 @@ body {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 10px;
+
 }
+
+
 
 .login-container button {
     border-radius: 10px;
@@ -89,7 +92,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, background 0.3s;
 }
 
 .home-button:hover {
@@ -99,7 +102,7 @@ body {
         background: linear-gradient(to left, #1D2671, #C33764);
     }
     
-
+ 
 
 
 

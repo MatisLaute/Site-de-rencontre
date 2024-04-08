@@ -5,15 +5,14 @@
     <link rel="stylesheet" type="text/css" href="connexion.css">
 </head>
 <body>
-    <button onclick="window.location.href='base.html'" class="home-button">Retour à l'accueil</button>
+
+        <button onclick="window.location.href='base.html'" class="home-button">Retour à l'accueil</button>
+ 
+    
     <div class="login-container">
         <h2>Heureux de vous revoir !</h2>
         <h3>Ma connexion</h3>
-        <form action="/submit_login" method="post">
-
-
-
-
+        <form action="connexion.php" method="post">
 
 <div class="radio-group">
     <label>Je suis un :</label>
@@ -24,12 +23,6 @@
     </ul>
 </div>
 
-
-
-
-
-
-
             <input type="text" placeholder="Mon nom d'utilisateur" name="uname" required>
             <input type="email" placeholder="Mon Email" name="email" required>
             <input type="password" placeholder="Mon mot de passe" name="psw" required>
@@ -37,5 +30,7 @@
             <p class="message">Pas enregistré? <a href="inscription.html">Créer un compte</a></p>
         </form>
     </div>
+
 </body>
+
 </html>

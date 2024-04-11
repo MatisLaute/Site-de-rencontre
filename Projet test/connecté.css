@@ -38,14 +38,14 @@ nav ul li:hover {
     transform: scale(1.05);
     background: linear-gradient(to left, #1D2671, #C33764);
 
-    transition: transform 0.3, background-color 0.3s;
+    transition: transform 0.3s, background 0.3s;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
 
-  
+    transition: transform 0.3s, background 0.3s;
 }
 
 
@@ -54,14 +54,11 @@ main {
 }
 
 footer {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.082);
     padding: 20px;
     text-align: center;
-    border-radius: 25px;
     position: fixed;
-    bottom: 0;
     width: 100%;
-    box-sizing: border-box;
-  
+    bottom: 0;
+    border-radius: 50px;
 }
-

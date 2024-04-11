@@ -35,11 +35,11 @@ header {
     position: absolute;
     top: 20px;
     right: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .home-button:hover {
-border-radius: 10px;
+border-radius: 20px;
     opacity: 0.8;
     transform: scale(1.05);
     background: linear-gradient(to left, #1D2671, #C33764);
@@ -81,7 +81,7 @@ footer {
 
 p {
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     background: #1D2671;
     padding: 10px;
 }
@@ -92,7 +92,7 @@ p:hover {
 .flexbox ul {
     list-style-type: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -127,7 +127,7 @@ p:hover {
 .flexbox ul li ul li {
     margin-bottom: 5px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     background: #1D2671;
     transition: background-color 0.3s ease;
 }
@@ -146,7 +146,7 @@ p:hover {
 .review-item {
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     margin-bottom: 20px;
@@ -155,7 +155,7 @@ p:hover {
 .review-item img {
     width: 7%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-right: 20px;
 }
 
@@ -169,7 +169,7 @@ p:hover {
 .review-image {
     width: 25%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 10px;
 }
 
@@ -186,7 +186,7 @@ p:hover {
     background-color: #1D2671;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 

@@ -162,3 +162,37 @@ footer {
         background: linear-gradient(to left, #1D2671, #C33764);
     }
  
+
+@media screen and (max-width: 768px) {
+    .flexbox ul {
+        width: 90%;
+    }
+    nav ul {
+        position: static;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .flexbox ul {
+        width: 90%;
+    }
+    nav ul {
+        position: static;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px auto;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .flexbox ul {
+        width: 50%;
+    }
+}

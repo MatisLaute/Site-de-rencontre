@@ -123,3 +123,31 @@ li {
     margin: 5px 2px;
 }
 
+/* Media Queries pour les écrans de taille moyenne (tablettes) */
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 90%;
+    }
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-container {
+        width: 95%;
+    }
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .login-container {
+        width: 50%;
+    }
+}

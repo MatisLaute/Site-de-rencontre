@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(to right, #1D2671, #C33764); 
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -15,15 +15,13 @@ form {
     border: none;
     margin: auto;
     border-radius: 25px;
-    background: #1e3c72;  
-    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72); 
     background-color: rgba(255, 255, 255, 0.1); 
     padding: 20px;
 
 }
 
 input, textarea {
-    width: 90%;
+    width: 95%;
     margin-bottom: 10px;
     padding: 10px;
     border: none;
@@ -55,9 +53,6 @@ input[type="submit"]:hover {
     border: none;
     background: #1D2671;
     color: white;
-    background-color: #1D2671;
-    color: white;
-    border: none;
     cursor: pointer;
     padding: 10px 20px;
     transition: transform 0.3s, background 0.3s;
@@ -69,7 +64,33 @@ input[type="submit"]:hover {
 
 .home-button:hover {
 border-radius: 20px;
-    opacity: 0.8;
     transform: scale(1.05);
     background: linear-gradient(to left, #1D2671, #C33764);
+}
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        width: 95%;
+    }
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    form {
+        width: 50%;
+    }
 }

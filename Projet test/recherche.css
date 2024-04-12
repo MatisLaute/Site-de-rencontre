@@ -50,7 +50,7 @@ body {
 }
 
 .search-form button:hover {
-    transform: scale(1.05);
+
     background: linear-gradient(to left, #1D2671, #C33764);
 }
 
@@ -73,4 +73,31 @@ body {
 border-radius: 20px;
     transform: scale(1.05);
     background: linear-gradient(to left, #1D2671, #C33764);
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .container {
+        width: 50%;
+    }
 }

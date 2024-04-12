@@ -34,7 +34,7 @@ body {
         }
 
         .payment-form input[type="text"], .payment-form input[type="number"], .payment-form select {
-            width: 100%;
+            width: 97%;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 20px;
@@ -55,7 +55,6 @@ body {
 
         .payment-form button:hover {
             border-radius: 20px;
-            opacity: 0.8;
             background: linear-gradient(to left, #1D2671, #C33764);
         }
 
@@ -80,7 +79,34 @@ body {
         
         .home-button:hover {
         border-radius: 20px;
-            opacity: 0.8;
             transform: scale(1.05);
             background: linear-gradient(to left, #1D2671, #C33764);
         }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    .home-button {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .container {
+        width: 50%;
+    }
+}

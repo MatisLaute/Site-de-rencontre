@@ -7,3 +7,7 @@ Samy : page d'inscription                             html/css/javascript
 Samy : page d'accueil                                 html/css
 samy : page FreeTour                                  html/css
 samy : page profil connecté                           html/css
+
+04/024/2024
+
+Samy : ajout d'un filtre pour le recherche

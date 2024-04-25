@@ -34,3 +34,22 @@ function checkPasswordStrength() {
         break;
     }
 }
+
+function previewImage(input) {
+    var preview = document.getElementById('preview') ;
+    preview.innerHTML = '' ;
+    
+    if (input.files && input.files[0]) {
+        var reader = new FileReader() ;
+
+        reader.onload = function(e) {
+            var img = document.createElement('img') ;
+            img.src = e.target.result ;
+            preview.appendChild(img) ;
+        }
+
+        reader.readAsDataURL(input.files[0]) ;
+    }
+
+}
+

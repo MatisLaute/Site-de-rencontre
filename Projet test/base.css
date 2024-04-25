@@ -87,11 +87,11 @@ footer {
         flex-wrap: wrap;
     }
     
-    .flexbox h2 {
+    .flexbox h2 {  
         text-align: center;
         color: #ffffff;
         font-size: 2em;
-        margin-bottom: 20px;
+        margin: 20px;
         width: 100%;
     }
     

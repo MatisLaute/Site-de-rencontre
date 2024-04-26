@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WonderDateLand/Page de Connexion</title>
+    <link rel="stylesheet" type="text/css" href="connexion.css">
+</head>
+<body>
+
+        <button onclick="window.location.href='base.html'" class="home-button">Retour à l'accueil ↩️</button>
+ 
+    
+    <div class="login-container">
+        <h2>Heureux de vous revoir !</h2>
+        <h3>Ma connexion</h3>
+        <form action="connexion.php" method="post">
+
+<div class="radio-group">
+    <label>Je suis un :</label>
+    <ul>
+        <li><input type="radio" id="option1" name="option" value="option1"><label for="option1">Administrateur</label></li>
+        <li><input type="radio" id="option2" name="option" value="option2"><label for="option2">Utilisateur</label></li>
+        <li><input type="radio" id="option3" name="option" value="option3"><label for="option3">Abonné</label></li>
+    </ul>
+</div>
+
+            <input type="text" placeholder="Mon nom d'utilisateur" name="uname" required>
+            <input type="email" placeholder="Mon Email" name="email" required>
+            <input type="password" placeholder="Mon mot de passe" name="psw" required>
+            <button type="submit">Me connecter 🥱</button>
+            <p class="message">Pas enregistré? <a href="inscription.html">Créer un compte</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page de paiement</title>
+    <link rel="stylesheet" href="abonnement.css">
+    <button onclick="window.location.href='connecté.html'" class="home-button">Retour à mon compte ↩️</button>
+    
+
+</head>
+<body>
+    <div class="container">
+        <form class="payment-form">
+            <h2>Paiement de l'abonnement</h2>
+            
+            <select name="subscription" required>
+                <option value="">Choisissez votre abonnement</option>
+                <option value="minidate">MiniDate 4.99€/mois</option>
+                <option value="bigdate">BigDate 7.99€/mois</option>
+                <option value="ultimatedate">UltimateDate 12.99€/mois</option>
+            </select>
+            <input type="text" name="name" placeholder="Nom complet" required>
+            <input type="text" name="cardNumber" placeholder="Numéro de carte" required>
+            <input type="number" name="expiryDate" placeholder="Date d'expiration (MM/AA)" required>
+            <input type="number" name="cvv" placeholder="CVV" required>
+            <button type="submit">Payer</button>
+            <p class="message">Pas enregistré? <a href="inscription.html">Créer un compte</a></p>
+        </form>
+    </div>
+</body>
+</html>

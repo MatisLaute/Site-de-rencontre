@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recherche d'utilisateur</title>
+    <link rel="stylesheet" href="wonder.css">
+    <button onclick="window.location.href='base.html'" class="home-button">Retour à l'accueil ↩️</button>
+    <script>
+        window.onload = function() {
+            document.querySelector('.search-form button[type="submit"]').addEventListener('click', function(event) {
+                event.preventDefault();
+                alert('Le message a été envoyé avec succès');
+                window.location.href = 'base.html';
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form class="search-form">
+            <h2>🔍 Nous contacter</h2>
+            <textarea name="message" id="message" border-radius:  placeholder="Entrez votre recomandation"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -67,6 +67,15 @@ border-radius: 20px;
     transform: scale(1.05);
     background: linear-gradient(to left, #1D2671, #C33764);
 }
+
+#image_preview {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    
+}
+
+
 @media screen and (max-width: 768px) {
     form {
         width: 90%;

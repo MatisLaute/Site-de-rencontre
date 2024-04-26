@@ -12,3 +12,21 @@ function validateForm() {
     }
     return true;
 }
+
+
+        function previewImage() {
+            var file = document.getElementById("profile_image").files[0];
+            var reader = new FileReader();
+
+            reader.onloadend = function () {
+                document.getElementById("image_preview").src = reader.result;
+                document.getElementById("image_preview").style.display = "block";
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                document.getElementById("image_preview").src = "";
+                document.getElementById("image_preview").style.display = "none";
+            }
+        }

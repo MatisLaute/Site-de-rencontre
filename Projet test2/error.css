@@ -43,4 +43,59 @@ p:hover {
 color: white;
 
 }
+.home-button {
+    border-radius: 20px;
+
+
+    display: inline-block;
+    padding: 4px 10px;
+    background-color:rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.home-button:hover {
+border-radius: 20px;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+footer li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    background-color: #1D2671;
+    border: none;
+    cursor: pointer;
+  padding: 4px 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    border-radius: 20px;
+    font-size: 15px;
+
+}
+footer li a {
+    color: white;
+    text-decoration: none;
+
+  
+}
+
+footer li:hover{
+    border-radius: 20px;
+    background: linear-gradient(to left, #1D2671, #C33764);
+}
 

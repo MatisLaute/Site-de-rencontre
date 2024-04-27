@@ -1,5 +1,10 @@
 # Site-de-rencontre
 
+27/04/2024
+Matis : ajout des fonctionalité de comunication avec la base de donnée
+Matis : ajout des fonctionalité de création de profile
+Matis : ajout des fonctinalité de verification de conection avec les cookies
+
 08/04/2024
 
 Samy : page de connexion                              html/css (php)

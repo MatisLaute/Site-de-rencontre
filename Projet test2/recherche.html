@@ -9,32 +9,16 @@
     <div class="container">
         <form class="search-form">
             <h2>🔍 Recherche d'utilisateur</h2>
-            <input type="text" name="username" placeholder="Entrez le pseudo" required>
-
-            <select id="gender" name="gender">
-                <option value="">Entrez votre Genre</option>
-                <option value="homme">Homme</option>
-                <option value="femme">Femme</option>
-            </select>
-     
-            <input type="number" id="age" name="age" min="1" max="100" placeholder="Entrez l'âge">
-    
-            <input type="text" id="city" name="city" placeholder="Entrez la Ville">
-           
+            <input id="searchbare" onkeydown="searchUpdate()" type="text" name="username" placeholder="Entrez le pseudo" required >
+            <!--va detecter le dernier imput du clavier (probleme a regler : il declanche la fonction avent que le charactère sois afficher, et va donc afficher les requette de la precedente fonction) -->
             <button type="submit">Rechercher</button>
 
             </form>
-            
-            <script>
-                document.getElementById('searchForm').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    var gender = document.getElementById('gender').value;
-                    var age = document.getElementById('age').value;
-                    var city = document.getElementById('city').value;
-                });
-                </script>
-         
+            <form>
+                <ul id="proposeList"></ul>
+            </form>
 
+            <script  src="searchbare.js"></script>
     </div>
 </body>
 </html>

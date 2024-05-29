@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Connecté</title>
+</head>
+<body>
+    <!-- Votre contenu HTML ici -->
+    <h1>Bienvenue sur la page connectée !</h1>
+
+    <!-- Bouton qui sera affiché si l'utilisateur a les permissions d'administrateur -->
+    <button id="adminButton">Action d'administrateur</button>
+
+    <script>
+        // Simulons une vérification des permissions ici
+        const utilisateurEstAdmin = true; // Remplacez par la logique réelle
+
+        // Récupérez l'élément bouton par son ID
+        const boutonAdmin = document.getElementById("adminButton");
+
+        if (perm == 0) {
+            // Affichez le bouton si l'utilisateur a les permissions d'administrateur
+            boutonAdmin.style.display = "block";
+
+            // Ajoutez un gestionnaire d'événements pour la redirection
+            boutonAdmin.addEventListener("click", () => {
+                // Redirigez l'utilisateur vers la page admin.html
+                window.location.href = "admin.html";
+            });
+        } else {
+            // Masquez le bouton sinon
+            boutonAdmin.style.display = "none";
+        }
+    </script>
+</body>
+</html>

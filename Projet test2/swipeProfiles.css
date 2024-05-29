@@ -1,0 +1,133 @@
+/* Styles pour la page de profils */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1D2671, #C33764); /* Dégradé bleu à violet */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Styles pour la page de profils */
+
+.profile {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-details {
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    margin: 0 20px;
+    height: 400px;
+
+}
+
+.edit-profile-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.edit-profile-area img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px; /* Maintien de la photo centrée verticalement */
+}
+
+.edit-profile-area p {
+    text-align: left;
+}
+
+
+button[type="submit"] {
+    cursor: pointer;
+    background-color: #1D2671; 
+    color: white;
+    transition: background 0.5s;
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(to left, #1D2671, #C33764);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre pour améliorer la visibilité */
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    background-color: #1D2671;
+    cursor: pointer;
+    padding: 4px 16px;
+    transition: transform 0.3s, background 0.3s;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer li:hover {
+    border-radius: 20px;
+    background: linear-gradient(to left, #1D2671, #C33764);
+}

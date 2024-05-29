@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des utilisateurs</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js"></script>
+
+
+</head>
+<body>
+    <h1>Gestion des utilisateurs</h1>
+    <input type="text" id="searchInput" placeholder="Rechercher par pseudo ou email">
+    <button onclick="searchUser()">Rechercher</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>PP</th>
+                <th>Pseudo</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>im</td>
+                <td>JD</td>
+                <td>John Doe</td>
+                <td>john.doe@example.com</td>
+                <td>
+                    <button onclick="editUser('john.doe@example.com')">Modifier</button>
+                    <button onclick="deleteUser('john.doe@example.com')">Supprimer</button>
+                    <button onclick="viewUserDetails('john.doe@example.com')">Détails</button>
+                    <button onclick="viewUserMsg('john.doe@example.com')">Messages</button>
+                </td>
+            </tr>
+            <!-- Ajoutez d'autres utilisateurs ici -->
+        </tbody>
+    </table>
+
+    <button onclick="addNewUser()">Ajouter un utilisateur</button>
+
+    <!-- Formulaire de modification d'utilisateur -->
+    <div id="userForm" style="display: none;">
+        <h2>Modifier l'utilisateur</h2>
+        <input type="text" id="editName" placeholder="Nouveau nom">
+        <input type="text" id="editPrenom" placeholder="Nouveau prénom">
+        <input type="text" id="editPseudo" placeholder="Nouveau pseudo">
+        <input type="password" id="editPassword" placeholder="Nouveau mot de passe">
+        <input type="file" id="editImage" accept="image/*">
+        <button onclick="saveUserChanges()">Enregistrer</button>
+    </div>
+    <!-- <ul>
+        <li>
+            <button onclick="showUserMessages('user1')">Voir les messages avec User 1</button>
+        </li>
+        <li>
+            <button onclick="showUserMessages('user2')">Voir les messages avec User 2</button>
+        </li>
+        Ajoutez d'autres utilisateurs ici 
+    </ul>
+
+    <div id="messageContainer" style="display: none;">
+        <h2>Messages avec User</h2>
+        <ul id="messageList">
+             Les messages seront ajoutés ici dynamiquement
+        </ul> -->
+
+        
+        <footer>
+            © 2024 WonderDateLand. Tous droits réservés.
+    
+             Paris, France |  +33 1 23 45 67 89 |  contact@WonderDateLand.fr
+            
+            | Conçu avec  pour paileter vos rencontres. | <li><a href="conditions.html">Conditions</a></li> | <li><a href="politique.html">Politique</a></li>
+        </footer>
+</body>
+</html>

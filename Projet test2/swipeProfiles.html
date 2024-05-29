@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Profil</title>
+    <link rel="stylesheet" href="swipeProfiles.css">
+    <!-- Liens vers Font Awesome pour les icônes de flèche -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile">
+            <div class="profile-details">
+                <div class="edit-profile-area">
+                    <img id="profile-picture" src="profile.ico" alt="Image de profil" onclick="detailedprofile()">
+                    <p><strong>Pseudo:</strong> <span id="username"></span></p>
+                    <p><strong>Description:</strong> <span id="description"></span></p>
+                    <p><strong>Abonement:</strong> <span id="abonnement"></span></p>
+                    <p><strong>Sexe:</strong> <span id="gender"></span></p>
+                    <p><strong>Age:</strong> <span id="age"></span></p>
+
+                </div>
+            </div>
+            <script  src="swipeProfiles.js"></script>
+            <!-- Ajout des icônes de flèche -->
+            <div class="arrow-container">
+                <!-- Utilisation des classes de Font Awesome pour les flèches -->
+                <i onclick="updateProfile()" class="fas fa-arrow-left arrow"></i>
+                <i onclick="updateProfile()" class="fas fa-arrow-right arrow"></i>
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2024 WonderDateLand. Tous droits réservés.
+        📍 Paris, France | 📞 +33 1 23 45 67 89 | 📧 contact@WonderDateLand.fr
+        | Conçu avec 💖 pour paileter vos rencontres💑. | <li><a href="conditions.html">Conditions</a></li> | <li><a href="politique.html">Politique</a></li>
+    </footer>
+    
+</body>
+</html>

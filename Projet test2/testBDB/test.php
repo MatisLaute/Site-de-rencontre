@@ -10,12 +10,10 @@
 */
 
 include 'beconect.php';
-
     $data = json_decode(file_get_contents("php://input"), true);
-    $str = '%' . $data . '%';//combine le data avec les selecteur mysql
 
-    $requette = $bdd->prepare("SELECT id, pseudo FROM profile WHERE pseudo LIKE ?");//get tt les pseudo contenet l'element rechercher
-    $requette->bind_param("s", $str);
+    $requette = $bdd->prepare("SELECT id, pseudo FROM profile WHERE pseudo LIKE '%m%'");//get tt les pseudo contenet l'leemnt rechercher
+    //$requette->bind_param("s", $data);
     $requette->execute();   
 
     $result = $requette->get_result();

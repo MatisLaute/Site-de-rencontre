@@ -3,7 +3,7 @@
 
 
     $pseudoU = $_POST ["uname"];
-    $passwordU = $_POST ["psw"];
+    $passwordU = $_POST ["password"];
     $mailU = $_POST ["email"];
 
     $stmt = $bdd->prepare("INSERT INTO profile(pseudo, password, mail) VALUES (?, ?, ?)");
@@ -22,10 +22,6 @@
         header("Location:error.html");
     }
     else{
-        header("Location:base.html");
+        header("Location:confirmationinscription.html");
     }
-
-    
-    
-
 ?>

@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1D2671, #C33764);
+    color: white;
+}
+
+
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    background-color: #1D2671;
+    border: none;
+    cursor: pointer;
+  padding: 10px 20px;
+    cursor: pointer;
+
+    border-radius: 25px;
+   
+}
+nav ul li:hover {
+    border-radius: 25px;
+    background: linear-gradient(to left, #1D2671, #C33764);
+
+    transition: transform 0.3s, background 0.3s;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+    transition: transform 0.3s, background 0.3s;
+}
+
+#adminButton{
+    display: inline;
+    margin-right: 10px;
+    background-color: #1D2671;
+    border: none;
+    cursor: pointer;
+  padding: 10px 20px;
+    cursor: pointer;
+color: white;
+    border-radius: 25px;
+}
+#adminButton:hover {
+    border-radius: 25px;
+    background: linear-gradient(to left, #1D2671, #C33764);
+
+    transition: transform 0.3s, background 0.3s;
+}
+
+
+#profile-picture{
+    width : 50px; 
+    height : 50px;
+}
+
+main {
+    padding: 20px;
+ }
+/*ici c est les parametres du pied de page */
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+  }
+  
+  footer li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    background-color: #1D2671;
+    border: none;
+    cursor: pointer;
+  padding: 4px 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    border-radius: 20px;
+    font-size: 15px;
+  
+  }
+  footer li a {
+    color: white;
+    text-decoration: none;
+  
+  
+  }
+  
+  footer li:hover{
+    border-radius: 20px;
+    background: linear-gradient(to left, #1D2671, #C33764);
+  }
+ /* ici c'est le responsive pour l'adaptation du site en fonction du support (pc, telephone, tablette) */
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        position: static;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        position: static;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+}

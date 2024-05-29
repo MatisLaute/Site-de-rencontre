@@ -2,6 +2,15 @@
     include 'beconect.php';
     $abo = $_POST ["subscription"];
     
+    if (isset($_COOKIE["perm"])) {
+        # code...
+    }
+    else{
+        header("Location:conection.html");
+    }
+
+
+
     if(!(Isset($_COOKIE["user_perm"]))){
         header("Location:inscription.html");
     }

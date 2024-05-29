@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Je modifie mon Profill</title>
+    <link rel="stylesheet" href="monProfil.css">
+    <script src="monProfil.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Je modifie mon Profil</h1>
+        <button onclick="window.location.href='connecte.html'" class="home-button">Retour à mon compte ↩️</button>
+    </header>
+
+    <form action="monprofile.php" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name" placeholder="Votre pseudo"><br>
+        <label for="password">Mot de passe:</label><br>
+        <input type="password" id="password" name="password" placeholder="Votre mot de passe"><br>
+        <label for="confirm_password">Confirmez le mot de passe</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Votre mot de passe"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Votre email"><br>
+        <label for="bio">Biographie:</label><br>
+        <textarea id="bio" name="bio" placeholder="Votre biographie"></textarea><br>
+        <label for="profile_image">Image de profil:</label><br>
+        <input type="file" id="profile_image" name="profile_image" accept="image/*"  id="file" onchange="previewImage()"><br>
+        <img id="image_preview" src="" alt="Aperçu de l'image de profil" style="display: none;"><br>
+        <input type="submit" value="Soumettre">
+    </form>
+
+    
+</body>
+</html>

@@ -1,25 +1,3 @@
-var cookie = document.cookie.split(';')
-
-for (let index = 0; index < cookie.length; index++) {
-    cookie[index] = cookie[index].split('=');
-    cookie[index][0] = cookie[index][0].trim();
-    
-    if (cookie[index][0].localeCompare('user_perm') == 0) {
-        var perm = cookie[index][1];
-    }
-}
-
-
-if ((typeof perm).trim() == 'undefined') {
-    alert("connectee vous");
-    window.location.replace('connexion.html');
-}
-
-
-
-
-
-
 function searchUpdate() {
     //a besoin d'une structure sous la forme <ul id="proposeList"></ul> pour fonctionner
     var data = document.getElementById("searchbare").value;
@@ -48,7 +26,7 @@ function searchUpdate() {
             
 
             for (let index = 0; index < pseudolist.length; index++) {
-                var ligne = '<li><button onclick="to_profile(' + idlist[index] + ')">' + pseudolist[index] + '</button></li>';
+                var ligne = '<li><button onclick="toprofile(' + idlist[index] + ')">' + pseudolist[index] + '</button></li>';
                 propose.insertAdjacentHTML('beforeend', ligne);
             }
             
@@ -59,16 +37,11 @@ function searchUpdate() {
     xhr.send(JSON.stringify(data));
 }
 
+function toprofile(idu2) {//on set les cookie pour que la page suivent save quel profile ouvrir
+    
 
+    document.cookie = 'user2_id=' + idu2 + '; max-age=86400; path=/';//24h*60min*60s = 86400
 
-
-function to_profile(idu2) {//on set les cookie pour que la page suivent save quel profile ouvrir
-    var exit = new XMLHttpRequest();
-    exit.open("POST", "exit_research.php", true);
-    exit.setRequestHeader("Content-Type", "application/json");
-    exit.send(JSON.stringify(idu2));
-
-    window.open('swipeProfiles.html');
-    window.close();
+    window.location.href="base.html"
 }
 

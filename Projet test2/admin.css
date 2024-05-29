@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+background: linear-gradient(to right, #1D2671, #C33764);
+color: white;
+margin-bottom: 100px;
+padding-bottom: 100px
+}
+
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.1);
+padding: 20px;
+text-align: center;
+border-radius: 25px;
+}
+
+/* Styles du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Ajout de bordures arrondies au tableau */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Styles des boutons */
+button {
+    background-color: #1D2671;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    font-weight: bold; /* Texte en gras */
+}
+
+button:hover {
+    background-color: #1D2671;
+    border-radius: 25px;
+}
+
+
+button {
+    border-radius: 25px;
+}
+
+
+/* Styles du formulaire de modification */
+#userForm {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1);;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajoutez d'autres styles au besoin ! */
+
+/* Style pour les liens */
+a {
+    color: #1D2671;
+    text-decoration: none;
+    transition: color 0.3s ease;  
+    border-radius: 25px;
+}  
+
+a:hover {
+    color: #1D2671;
+    border-radius: 25px;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+}
+footer {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 20px;
+text-align: center;
+border-radius: 25px;
+bottom: 0;
+width: 100%;
+box-sizing: border-box;
+position: fixed;
+}
+
+footer li{
+list-style: none;
+display: inline;
+margin-right: 10px;
+background-color: #1D2671;
+border: none;
+cursor: pointer;
+padding: 4px 16px;
+cursor: pointer;
+transition: transform 0.3s, background 0.3s;
+border-radius: 20px;
+font-size: 15px;
+
+}
+footer li a {
+color: white;
+text-decoration: none;
+
+
+}
+
+footer li:hover{
+border-radius: 20px;
+background: linear-gradient(to left, #1D2671, #C33764);
+}

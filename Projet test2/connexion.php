@@ -43,7 +43,7 @@
         
         setcookie('user_perm', '', time()-3600, '/', '', false, false);
         setcookie('user_perm', $row["perm"], time()+3600*24, '/', '', false, false);
-        header("Location:connecté.html");
+        header("Location:connecte.html");
     }
     else {
         //mauvais pasword
